@@ -21,9 +21,11 @@ class ViewController: UIViewController,UITextFieldDelegate{
     
     //MARK: Action
     @IBAction func changeValuePercentTip(_ sender: UISlider) {
-        labelPercentTip.text = "\(Int(sender.value))%"
-        tip = sender.value
+        let pc:Int  = Int(sender.value)
+        labelPercentTip.text = "\(pc)%"
+        tip = Float(pc)
         changeTotal()
+        self.view.backgroundColor = UIColor (colorLiteralRed: 160/tip, green: 97/tip, blue: 5/tip, alpha: 0.6)
     }
     
     func changeTotal() {    
@@ -54,7 +56,7 @@ class ViewController: UIViewController,UITextFieldDelegate{
             cost = check
         }
         else {
-         cost = 0	   
+         cost = 0
         }
 
         changeTotal()
