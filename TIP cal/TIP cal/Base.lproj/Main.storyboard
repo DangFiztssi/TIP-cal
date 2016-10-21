@@ -18,9 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIP calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxw-Ik-Vqz">
-                                <frame key="frameInset" minX="124" minY="35" width="163" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxw-Ik-Vqz">
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -40,9 +38,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-w8-e8L">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-w8-e8L">
                                 <frame key="frameInset" minX="16" minY="76" width="343" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.48626321937190553" green="0.5956860936242212" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7t-Hw-1Np">
@@ -87,6 +84,14 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TbF-w8-e8L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="7N7-kg-vkB"/>
+                            <constraint firstAttribute="trailing" secondItem="Xxw-Ik-Vqz" secondAttribute="trailing" constant="100" id="KH3-0k-Ytw"/>
+                            <constraint firstItem="TbF-w8-e8L" firstAttribute="top" secondItem="Xxw-Ik-Vqz" secondAttribute="bottom" constant="16" id="NeI-4b-SAH"/>
+                            <constraint firstItem="Xxw-Ik-Vqz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Tpk-pr-UIO"/>
+                            <constraint firstItem="Xxw-Ik-Vqz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="bnO-dG-ku6"/>
+                            <constraint firstAttribute="trailing" secondItem="TbF-w8-e8L" secondAttribute="trailing" constant="16" id="vMt-zW-nT6"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="labelPercentTip" destination="o8c-fY-T4l" id="2NP-Pi-4JD"/>
