@@ -52,13 +52,25 @@ class ViewController: UIViewController,UITextFieldDelegate{
     }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if let check = Float(textField.text!){
-            cost = check
+        updateCost(textField.text!)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let tmp:NSString = textFieldCost.text as NSString? ?? ""
+        let textAfterUpdate = tmp.replacingCharacters(in: range, with: string)
+        
+        updateCost(textAfterUpdate)
+        
+        return true
+    }
+    
+    func updateCost(_ input: String){
+        if let check = Float(input){
+            cost  = check
         }
-        else {
+        else{
          cost = 0
         }
-
         changeTotal()
     }
     
