@@ -40,6 +40,8 @@
                             </label>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-w8-e8L">
                                 <frame key="frameInset" minX="16" minY="76" width="343" height="1"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-w8-e8L" userLabel="Line Header">
                                 <color key="backgroundColor" red="0.48626321937190553" green="0.5956860936242212" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7t-Hw-1Np">
